@@ -1,0 +1,20 @@
+buildscript {
+    ext {
+        // ...其他配置...
+        playServicesVersion = "17.0.0"
+        buildToolsVersion = "33.0.0"
+        minSdkVersion = 21
+        compileSdkVersion = 33
+        targetSdkVersion = 33
+        googlePlayServicesVersion = "18.1.0"
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("com.android.tools.build:gradle:7.3.1")
+        classpath("com.facebook.react:react-native-gradle-plugin")
+        classpath("com.google.gms:google-services:4.3.15")
+    }
+} 

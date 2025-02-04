@@ -1,0 +1,14 @@
+dependencies {
+    // ...其他依赖...
+    implementation "com.google.android.gms:play-services-base:${rootProject.ext.playServicesVersion}"
+    implementation "com.google.android.gms:play-services-maps:${rootProject.ext.playServicesVersion}"
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+}
+
+android {
+    // ... 其他配置
+    defaultConfig {
+        // ... 其他配置
+        missingDimensionStrategy 'react-native-google-maps', 'release'
+    }
+} 
